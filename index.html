@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <title>Kindlestar</title>
+    <link rel="icon" href="data:," />
+    <style>
+      html, body { margin: 0; height: 100%; overflow: hidden; background: #0b0a1f; overscroll-behavior: none; }
+      button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+      body {
+        -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
+        -webkit-touch-callout: none; touch-action: none;
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; color: #ffffff;
+      }
+      #game { position: fixed; inset: 0; display: block; width: 100%; height: 100%; }
+      #ui { position: fixed; inset: 0; pointer-events: none;
+        padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); }
+      #ui * { pointer-events: auto; }
+    </style>
+    <script type="module" crossorigin src="./assets/index-BHhFltDu.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/three-BEZrlTT0.js">
+  </head>
+  <body>
+    <canvas id="game"></canvas>
+    <div id="ui"></div>
+  </body>
+</html>
